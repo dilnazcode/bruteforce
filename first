@@ -1,0 +1,17 @@
+import sys
+s_login = "admin"
+s_password = "password456"
+
+def check_login(username, password):
+if username == s_login and password == s_password:
+return True
+else:
+return False
+username = input("logyn zhazu: ")
+password = input("parol zhazu: ")
+if check_login(username, password):
+print("dostup beriledi")
+sys.exit(0)
+else:
+print("qatelik")
+sys.exit(1)
