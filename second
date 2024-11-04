@@ -1,0 +1,10 @@
+from cryptography.fernet import Fernet
+key = Fernet.generate_key()
+clipher = Fernet(key)
+with open("secret.key", "wb") as key_file:
+key_file.write(key)
+khat= b"salut, kak ty"
+korgalgan_khat = clipher.encrypt(khat)
+print(korgalgan_khat)
+with open("khat.txt", "wb") as file:
+file.write(korgalgan_khat)
