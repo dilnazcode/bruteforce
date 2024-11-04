@@ -1,0 +1,8 @@
+password = "123456"
+login = "admin"
+e_password = input("engiz")
+e_login = input("login engiz")
+if e_password == password and e_login == login:
+print(1)
+else:
+print(0)
